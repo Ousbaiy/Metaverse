@@ -87,9 +87,9 @@
 .feedback-gradient {
   position: absolute;
   width: 200px;
-  height: 316px;
+  height: 220px;
   left: 0px;
-  top: 0px;
+  top: -100px;
 
   background: #8d39a3;
   filter: blur(175px);
