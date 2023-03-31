@@ -2,8 +2,11 @@
 
 // library
 import { motion } from 'framer-motion';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { fadeIn, slideIn, staggerContainer, textVariant } from '../utils/motion';
 import styles from '../styles/index';
+
+// data
+import { heroSocials } from '../data';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -12,8 +15,23 @@ const Hero = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${styles.innerWidth} relative mx-auto flex flex-col`}
     >
+      <motion.div
+        variants={fadeIn('left', 'tween', 1, 1)}
+        initial="hidden"
+        whileInView="show"
+        className="absolute flex-col gap-4 right-4 md:flex hidden"
+      >
+        {heroSocials.map((social) => (
+          <img
+            key={social.name}
+            src={social.url}
+            alt={social.name}
+            className="w-[24px] h-[24px] object-contain"
+          />
+        ))}
+      </motion.div>
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h1
           variants={textVariant(1.1)}
@@ -32,13 +50,13 @@ const Hero = () => (
       </div>
 
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1.1)}
+        variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
         <img
           src="/cover.png"
-          alt="cover"
+          alt="hero_cover"
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
         <a href="#explore">

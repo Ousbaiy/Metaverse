@@ -68,6 +68,25 @@ export const insights = [
   },
 ];
 
+export const heroSocials = [
+  {
+    name: 'reddit',
+    url: '/reddit.svg',
+  },
+  {
+    name: 'discord',
+    url: '/discord.svg',
+  },
+  {
+    name: 'twitter',
+    url: '/twitter.svg',
+  },
+  {
+    name: 'instagram',
+    url: '/insta.svg',
+  },
+];
+
 export const socials = [
   {
     name: 'twitter',
