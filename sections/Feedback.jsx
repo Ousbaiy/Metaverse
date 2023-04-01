@@ -1,9 +1,14 @@
 'use client';
 
+import Image from 'next/image';
+
 // library
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, zoomIn } from '../utils/motion';
 import styles from '../styles/index';
+
+// images
+import Planet from '../public/planet-09.png';
 
 const Feedback = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -37,8 +42,8 @@ const Feedback = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/planet-09.png"
+        <Image
+          src={Planet}
           alt="planet"
           className="w-full lg:h-[610px] h-auto object-cover rounded-[40px]"
         />

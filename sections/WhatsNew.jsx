@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 // library
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
@@ -8,6 +10,9 @@ import { NewFeatures, TitleText, TypingText } from '../components';
 
 // data
 import { newFeatures } from '../data';
+
+// images
+import Whatsnew from '../public/whats-new.png';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -34,8 +39,8 @@ const WhatsNew = () => (
         variants={planetVariants('right')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img
-          src="/whats-new.png"
+        <Image
+          src={Whatsnew}
           alt="whats-new"
           className="w-[90%] h-[90%] object-contain"
         />

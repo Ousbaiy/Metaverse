@@ -7,6 +7,10 @@ import { motion } from 'framer-motion';
 import { navVariants } from '../utils/motion';
 import styles from '../styles/index';
 
+// images
+import Search from '../public/search.svg';
+import Menu from '../public/menu.svg';
+
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
@@ -17,20 +21,18 @@ const Navbar = () => (
     <div className="absolute w-[50%] inset-0 gradient-01" />
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
       <Image
-        src="/search.svg"
+        src={Search}
         alt="search"
-        width={24}
-        height={24}
-        className="cursor-pointer"
+        className="w-[24px] h-[24px] object-contain"
       />
+
       <h1 className="font-extrabold text-[24px] leading-[30px] text-white">
-        METAVERSE
+        METAVERSUS
       </h1>
       <Image
-        src="/menu.svg"
+        src={Menu}
         alt="menu"
-        width={24}
-        height={24}
+        className="w-[24px] h-[24px] object-contain"
       />
     </div>
   </motion.nav>

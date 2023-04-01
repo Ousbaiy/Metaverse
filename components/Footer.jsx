@@ -25,7 +25,11 @@ const Footer = () => (
           type="button"
           className="flex items-center gap-3 h-fit py-5 px-8 rounded-[32px] bg-[#25618B]"
         >
-          <img src="/headset.svg" alt="headset" />
+          <img
+            src="/headset.svg"
+            alt="headset"
+            className="w-[24px] h-[24px] object-contain"
+          />
           <span className="font-normal text-[16px] text-white">
             ENTER METAVERSE
           </span>

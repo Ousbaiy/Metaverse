@@ -1,10 +1,15 @@
 'use client';
 
+import Image from 'next/image';
+
 // library
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn } from '../utils/motion';
 import styles from '../styles/index';
 import { TitleText, TypingText } from '../components';
+
+// images
+import Map from '../public/map.png';
 
 const World = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -21,7 +26,7 @@ const World = () => (
         variants={fadeIn('up', 'tween', 0.3, 1)}
         className="relative mt-[68px] dlex w-full h-[550px]"
       >
-        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
+        <Image src={Map} alt="map" className="w-full h-full object-cover" />
         <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5d6680]">
           <img
             src="people-01.png"

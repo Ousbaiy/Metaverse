@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 // library
 import { motion } from 'framer-motion';
 import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
@@ -8,6 +10,9 @@ import { StartSteps, TitleText, TypingText } from '../components';
 
 // data
 import { startingFeatures } from '../data';
+
+// Images
+import Getstarted from '../public/get-started.png';
 
 const GetStarted = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -22,11 +27,16 @@ const GetStarted = () => (
         variants={planetVariants('left')}
         className={`flex-1 ${styles.flexCenter}`}
       >
-        <img
-          src="/get-started.png"
+        <Image
+          src={Getstarted}
           alt="get-started"
           className="w-[90%] h-[90%] object-contain"
         />
+        {/* <img
+          src="/get-started.png"
+          alt="get-started"
+          className="w-[90%] h-[90%] object-contain"
+        /> */}
       </motion.div>
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
