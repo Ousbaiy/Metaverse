@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Metaverse 
+
+This is a metaverse website built using Next.js, Tailwind CSS, Framer Motion, and ESLint. The website aims to provide users with a seamless and immersive experience in a virtual world.
 
 ## Getting Started
+To get started with the project, first, clone the repository to your local machine. Then, navigate to the project directory and run the following command to install the necessary dependencies:
 
-First, run the development server:
+1. Clone the repository to your local machine:
 
-```bash
-npm run dev
-# or
-yarn dev
 ```
+git clone https://github.com/Ousbaiy/Metaverse.git
+```
+2. Install the dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+cd Metaverse
+npm install
+```
+3. Start the development server:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
+This will start the development server and open the app in your default browser. The app will automatically reload whenever you make changes to the code.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technologies Used
 
-## Learn More
+This project uses the following technologies:
 
-To learn more about Next.js, take a look at the following resources:
+- [Nextjs](https://nextjs.org/).
+- [Framer-motion](https://www.framer.com/motion/).
+- [Tailwind](https://tailwindcss.com/).
+- [ESLint](https://eslint.org/).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
